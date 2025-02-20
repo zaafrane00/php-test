@@ -22,7 +22,7 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     // {id} must be a number (\d+)
     $r->addRoute('POST', '/api/login', 'AuthController@login');
     // The /{title} suffix is optional
-    $r->addRoute('GET', '/api/protected', 'AuthController@protected');
+    $r->addRoute('GET', '/api/protected', 'AuthController@protectedData');
 });
 
 // Fetch method and URI from somewhere
