@@ -3,6 +3,7 @@
 class AuthController
 {
 
+    // this method is used to login the user
     public function login()
     {
         $data = json_decode(file_get_contents('php://input'), true);
@@ -17,7 +18,7 @@ class AuthController
         }
     }
 
-
+    // this method is used to get protected data
     public function protectedData()
     {
         $headers = getallheaders();

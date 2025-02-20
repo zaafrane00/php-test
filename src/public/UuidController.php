@@ -5,6 +5,7 @@ use Ramsey\Uuid\Uuid;
 
 class UuidController
 {
+    // this method is used to generate a UUID
     public function generate()
     {
         $uuid = Uuid::uuid4();
